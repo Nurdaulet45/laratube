@@ -1,0 +1,41 @@
+// Fonts
+@import url('https://fonts.googleapis.com/css?family=Nunito');
+
+// Variables
+@import 'variables';
+
+// Bootstrap
+@import '~bootstrap/scss/bootstrap';
+
+.btn-info {
+    color: #fff;
+}
+
+.channel-avatar {
+    height: 100px;
+    width: 100px;
+    border: 1px solid rgba(0,0,0,0.125);
+    position: relative;
+    cursor: pointer;
+
+    .channel-avatar-overlay{
+        display: none;
+    }
+
+
+    &:hover {
+        .channel-avatar-overlay {
+            height: 100%;
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            position: absolute;
+            background-color: rgba(0,0,0,0.4);
+
+        }
+    }
+
+}
+
+
