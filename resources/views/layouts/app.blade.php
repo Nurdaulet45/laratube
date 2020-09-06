@@ -84,4 +84,15 @@
         </main>
     </div>
 </body>
+<script>
+    window.AuthUser = '{!! auth()->user() !!}'
+
+    window.__auth = () =>{
+        try{
+            return JSON.parse(AuthUser)
+        } catch (e) {
+            return null
+        }
+    }
+</script>
 </html>
